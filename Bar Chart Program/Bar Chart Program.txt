@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+
+  public static void main(String[] args) throws Exception {
+    // write your code here
+    int n,i,j,small,large;
+    int[] arr;
+    Scanner sc=new Scanner(System.in);
+    n=sc.nextInt();
+    arr=new int[n];
+    for(i=0;i<n;i++){
+        arr[i]=sc.nextInt();
+    }
+    small=arr[0];
+    large=arr[0];
+    for(j=1;j<n;j++){
+    if(small>arr[j]){
+        small=arr[j];
+    }
+    if(large<arr[j]){
+        large=arr[j];
+    }
+    }
+    System.out.println(large-small);
+  }
+
+}
