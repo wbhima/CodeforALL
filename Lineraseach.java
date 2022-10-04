@@ -9,7 +9,11 @@ public static int linearSearch(int[] arr, int key){
     }    
     public static void main(String a[]){    
         int[] a1= {10,20,30,50,70,90};    
-        int key = 50;    
-        System.out.println(key+" is found at index: "+linearSearch(a1, key));    
+        int key = 50;
+        int ans = linearSearch(a1,key)
+          if(ans == -1)
+          System.out.println("Element not found");
+      else
+        System.out.println(key+" is found at index: "+ ans);    
     }    
 }    
