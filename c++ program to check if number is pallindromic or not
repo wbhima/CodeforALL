@@ -1,0 +1,16 @@
+class Solution {
+public:
+    bool isPalindrome(int x) {
+      long long int y=x, r=x;
+        long long int t=0;
+        while(y!=0){
+            long long int d=y%10;
+            y=y/10;
+            t=t*10+d;
+        }
+        if(t==r && r>=0)
+            return true;
+        else
+            return false;
+    }
+};
