@@ -1,0 +1,38 @@
+class Solution {
+public:
+    int reverse(int x) {
+   long long int y=x;
+  long long  int s=0;
+     if(y>=-2147483648 && y<=2147483647)
+     { if(y>=0)
+    {
+        while(y!=0)
+        {
+            int d=y%10;
+            y/=10;
+            s=s*10+d;
+            
+        }
+    }
+    if(y<0  || y==-2147483648)
+    {
+        y=y*(-1);
+         while(y!=0)
+        {
+            int d=y%10;
+            y/=10;
+            s=s*10+d;
+            
+        }
+        s=s*(-1);
+    }
+    
+        if(s>=-2147483648 && s<=2147483647)
+  return s;
+        else
+            return 0;}
+        else
+            return 0;
+        
+} 
+};
