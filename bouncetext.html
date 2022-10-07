@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> bouncing text</title>
+    <style>
+       
+      .bouncing{
+        font-size: 50px;
+        text-align: center;
+        margin-top: 50px;
+        animation-name: bouncing;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-delay: 1s;
+}
+.ODD{
+    animation-name: odd;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-delay: 1s;
+}
+
+@keyframes bouncing{
+   0%{ 
+    font-size: 55px;
+}
+   50%{ 
+    font-size: 100px;
+
+      }  
+       100%{
+        font-size: 55px;
+       }
+   
+}
+@keyframes odd{
+   0%{ 
+    font-size: 100px;
+}
+   50%{ 
+    font-size: 55px;
+
+      }  
+       100%{
+        font-size: 100px;
+       }
+    }
+    </style>
+</head>
+<body>
+    <div id="float">
+
+    </div>
+    <div class="bouncing">
+         H<span class="ODD">a</span>c<span class="ODD">k</span>t<span class="ODD">o</span>b<span class="ODD">e</span>r <span class="ODD">f</span>e<span class="ODD">s</span>t 2<span class="ODD">0</span>2<span class="ODD">2</span>
+    </div>
+</div>
+</body>
+</html>
