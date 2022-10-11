@@ -1,0 +1,22 @@
+// Binary Search in C using Recursive Method
+
+#include <stdio.h>
+
+int binarySearch(int array[], x, low, high) {
+  if (high >= low) {
+    int mid = low + (high - low) / 2;
+
+    // If found at mid, then return it
+    if (array[mid] == x)
+      return mid;
+
+    // Searches at the left half
+    if (array[mid] > x)
+      return binarySearch(array, x, low, mid - 1);
+
+    // Searches at the right half
+    return binarySearch(array, x, mid + 1, high);
+  }
+
+  return -1;
+}
