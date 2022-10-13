@@ -1,0 +1,106 @@
+#include<stdio.h>
+int main()
+{
+	int choice,m=3,n=3,i,j,k,sum,a[3][3],b[3][3],mat[3][3];
+	printf("Enter your choice:-\n1 for Matrix Addition\n2 for Matrix Multiplication\n3 for Transpose of matrix\n");
+	scanf("%d",&choice);
+  
+  //ADDITION OF MATRICES
+	if (choice==1)
+	{  
+    	printf("enter %d elements of 1st matrix saperated with space: ",m*n);
+	    
+	    for(i=0;i<m;i=i+1){
+	                       for(j=0;j<n;j=j+1){
+	                                          scanf("%d",&a[i][j]);
+	                                          printf("%d\t",a[i][j]);
+	                                          }
+	                       printf("\n");
+	                       }
+                       
+	    printf("enter %d elements of 2nd matrix saperated with space: ",m*n);
+	   
+	    for(i=0;i<m;i=i+1){
+	                       for(j=0;j<n;j=j+1){
+	                                          scanf("%d",&b[i][j]);
+	                                          printf("%d\t",b[i][j]);
+	                                          }
+	                       printf("\n");
+	                       }    
+	
+    
+	    printf("\n Sum of these two matrices:-\n");
+	     for(i=0;i<m;i=i+1){
+	                       for(j=0;j<n;j=j+1){
+	                                          
+	                                          printf("%d\t",a[i][j] + b[i][j]);
+	                                          }
+	                       printf("\n");
+	                       }            
+   
+	}
+  
+  //MULTIPLICATION OF MATRICES
+	else if (choice==2)
+	{
+	    printf("enter %d elements of 1st matrix saperated with space: ",m*n);
+	    for(i=0;i<m;i=i+1){
+	                       for(j=0;j<n;j=j+1){
+	                                          scanf("%d",&a[i][j]);
+	                                          printf("%d\t",a[i][j]);
+	                                          }
+	                       printf("\n");
+	                       }
+                       
+	    printf("enter %d elements of 2nd matrix saperated with space: ",m*n);
+	    
+	    for(i=0;i<n;i=i+1){
+	                       for(j=0;j<m;j=j+1){
+	                                          scanf("%d",&b[i][j]);
+	                                          printf("%d\t",b[i][j]);
+	                                          }
+	                       printf("\n");
+	                       }    
+    
+	    printf("\n multiplication of these two matrices:-\n");
+	     for(i=0;i<m;i=i+1){
+	                        
+	                       for(j=0;j<n;j=j+1){
+	                                          sum=0;
+	                                          for(k=0;k<n;k=k+1){
+	                                                            sum=sum+a[i][k]*b[k][j];
+	                                                            }
+	                                          printf("%d\t",sum);
+	                                          }
+	                       
+	                                          
+	                       printf("\n");
+	                       }   
+	}
+  
+  //TRANSPOSE OF MATRICES
+	else if (choice==3)
+	{
+		printf("enter elements of %d*%d matrix\n\n ",n,n);
+    
+	    for(i=0;i<n;i=i+1){
+	                       for(j=0;j<n;j=j+1){
+	                                          scanf("%d",&mat[i][j]);
+	                                          printf("%d\t",mat[i][j]);
+	                                          }
+	                        printf("\n");                  
+	                       } 
+	    printf("\n\nTranspose of the matxix:-\n");
+	    for(i=0;i<n;i=i+1){
+	                       for(j=0;j<n;j=j+1){
+	                                          printf("%d\t",mat[j][i]);
+	                                          }
+	                       printf("\n");
+	                       }
+	}
+	else
+	{
+		printf("wrong choice");
+	}
+	return 0;
+}
