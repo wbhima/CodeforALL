@@ -1,0 +1,225 @@
+* {
+
+    -webkit-tap-highlight-color: transparent;
+
+    tap-highlight-color: transparent;
+
+    -webkit-box-sizing: border-box;
+
+    -webkit-user-select: none;
+
+    scroll-behavior: smooth;
+
+    box-sizing: border-box;
+
+    user-select: none;
+
+}
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    text-align: center;
+
+    background: #dcecf9;
+
+}
+
+#wrapper {
+
+    padding: 0;
+
+    margin: 0;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+}
+
+#query {
+
+    position: relative;
+
+    width: 70vw;
+
+    height: 35px;
+
+    left: 8vw;
+
+    border-top-left-radius: 15px;
+
+    border-bottom-left-radius: 15px;
+
+    border: 1.5px solid #4e4e90;
+
+    outline: none;
+
+    text-indent: 20px;
+
+    top: 15px;
+
+    font-weight: 500;
+
+    font-size: 15px;
+
+    font-family: "poppins", sans-serif;
+
+    background: #f3f9fd;
+
+}
+
+#load {
+
+    position: relative;
+
+    width: 20vw;
+
+    height: 35px;
+
+    border-top-right-radius: 15px;
+
+    border-bottom-right-radius: 15px;
+
+    border: 1.5px solid #4e4e90;
+
+    outline: none;
+
+    background-color: #fff;
+
+    top: 15px;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    font-family: "poppins", sans-serif;
+
+    background: #f3f9fd;
+
+}
+
+.main_section {
+
+    display: flex;
+
+    padding: 1.5rem;
+
+    width: 100%;
+
+    height: auto;
+
+    margin-top: 1rem;
+
+}
+
+.section_cnt {
+
+    display: flex;
+
+    flex-direction: column;
+
+    background-color: #fff;
+
+    width: 100%;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background: #f3f9fd;
+
+}
+
+.article_image {
+
+    width: 100%;
+
+    height: auto;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+}
+
+.desc_cnt {
+
+    display: flex;
+
+    flex: 1 1 auto;
+
+    flex-direction: column;
+
+    padding: 1rem;
+
+    line-height: 1.5em;
+
+}
+
+.info {
+
+    font-family: "poppins", sans-serif;
+
+    font-weight: 500;
+
+    margin-top: 1rem;
+
+    color: #44447f;
+
+    line-height: 1.7em;
+
+}
+
+.main {
+
+    color: #44447f;
+
+    font-family: "poppins", sans-serif;
+
+    font-weight: 500;
+
+    line-height: 1.7em;
+
+}
+
+.header {
+
+    font-size: 18px;
+
+    line-height: 1.3em;
+
+    font-family: "montserrat", sans-serif;
+
+    font-weight: 600;
+
+    color: #3b3b6e;
+
+    margin-bottom: 0.2em;
+
+}
+
+.more {
+
+    color: #44447f;
+
+    font-family: "poppins", sans-serif;
+
+    font-weight: 400;
+
+    line-height: 1.7em;
+
+    text-align: right;
+
+    margin-top: 0.5rem;
+
+    right: 20px;
+
+    text-decoration: none;
+
+    position: relative;
+
+}
